@@ -8,7 +8,7 @@ var routes = require('./routes/index');
 global.config = require('config');
 global.mongoose = require('./utils/mongoose');
 global.logger = require('./utils/logger');
-global.Authorization = require('../utils/auth');
+global.Authorization = require('./utils/auth');
 
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);

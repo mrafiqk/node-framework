@@ -1,0 +1,22 @@
+{
+  "mongoDbURL":"mongodb://localhost:27017/myapp",
+    "app":{
+        "port":"80",
+        "fileUploadPath":"../uploads",
+        "enableSMSGateway":false
+    },
+    "logger":{
+        "filePath":"./logs/myapp-%DATE%.log"
+    },
+    "session":{
+        "secret":"5d3956ffb2548468a5d0f222",
+        "cookies":{
+            "domain":"localhost",
+            "path": "/",
+            "httpOnly": true,
+            "secure": false,
+            "maxAge": null
+        }
+    },
+    "domain":"http://localhost:8080"
+}

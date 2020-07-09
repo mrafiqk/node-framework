@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env NODE_ENV=prod node index.js",
-    "run": "cross-env PORT=8080 nodemon ."
+    "run": "cross-env PORT=8080 node index.js"
   },
   "author": "",
   "license": "ISC",

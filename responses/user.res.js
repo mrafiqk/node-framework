@@ -1,8 +1,8 @@
 var resmodel = require('../utils/responseModel');
 
-exports.getResponse = (err, data, res) => {
+exports.getResponse = (err, data, input, res) => {
   if(err) {
-    logger.error({code:"#getUserError",error:err,input:req.body})
+    logger.error({ code:"#getUserError", error:err, input: input })
     errors = [{
       message:"DB Error! Please contact administrator."
     }]

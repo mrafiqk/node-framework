@@ -16,17 +16,10 @@ const user = new mongoose.Schema({
   s: {
     type:String,
     default:'A'
-  },
-  CreatedAt: {
-    type: Date,
-    default: Date.now
-  },
-  ModifiedAt: {
-    type: Date,
-    default: Date.now
   }
 }, {
-  versionKey: false
+  versionKey: false,
+  timestamps: { createdAt: 'createdAt', updatedAt: 'updatedAt' }
 });
 
 module.exports = mongoose.model('user', user);
